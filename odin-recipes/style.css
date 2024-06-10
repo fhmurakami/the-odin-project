@@ -1,0 +1,36 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  color: rgb(190, 86, 11);
+  text-align: center;
+  border-bottom: 2px solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.dashed-list li:before {
+  content: "- ";
+  margin-left: -5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
