@@ -120,9 +120,9 @@ main {
 }
 
 .info-container {
-  width: 50%;
+  width: 825px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .card {
@@ -165,7 +165,7 @@ main {
 }
 
 .quote-container {
-  width: 43%;
+  width: 790px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -181,9 +181,10 @@ main {
 
 .author {
   margin: 0;
+  margin-right: 40px;
   text-align: right;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 1.45rem;
+  font-weight: 700;
 }
 
 .call-to-action {
@@ -195,12 +196,12 @@ main {
 }
 
 .call-to-action-container {
-  width: 55%;
+  width: 950px;
   padding: 50px 0;
   border-radius: 10px;
   background-color: var(--light-blue);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -210,10 +211,27 @@ main {
 }
 
 .text p {
+  font-size: 1.1rem;
   font-weight: 300;
   margin: 0;
 }
 
 .button .sign-up {
   border: 2px solid var(--white);
+  margin-right: 25px;
+}
+
+footer {
+  height: 100px;
+  font-weight: 300;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  margin: 0;
+  padding: 0 10px;
 }
