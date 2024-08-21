@@ -6,7 +6,7 @@
 | -------------------------------- | ----------------------------------------------------------- | ----------------------------- | ----------------------------- |
 | **Recipes**                      | [HTML Foundations Project][HTMLFoundationsProject]          | [Code][HTMLFoundationsCode]   | [Page][HTMLFoundationsPage]   |
 | **CSS Exercises**                |                                                             |                               |                               |
-| **Foundations**                  | [CSS Foundations Exercises][CSSFoundationsProject]          |                               |                               |
+| **Foundations**                  | [CSS Foundations Exercises][CSSFoundationsExercises]        |                               |                               |
 | 1. CSS Methods                   |                                                             | [Code][CSSFoundationsCode1]   | [View][CSSFoundationsPage1]   |
 | 2. Class and ID Selectors        |                                                             | [Code][CSSFoundationsCode2]   | [View][CSSFoundationsPage2]   |
 | 3. Grouping Selectors            |                                                             | [Code][CSSFoundationsCode3]   | [View][CSSFoundationsPage3]   |
@@ -24,6 +24,7 @@
 | 5. A common 'modal' style        |                                                             | [Code][CSSFlexCode5]          | [View][CSSFlexPage5]          |
 | 6. An entire page!               |                                                             | [Code][CSSFlexCode6]          | [View][CSSFlexPage6]          |
 | 7. The Holy Grail of Layout      |                                                             | [Code][CSSFlexCode7]          | [View][CSSFlexPage7]          |
+| **Landing Page**                 | [CSS Foundations Project][CSSFoundationsProject]            | [Code][CSSFoundationsCode]    | [View][CSSFoundationsPage]    |
 |                                  |                                                             |                               |                               |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
@@ -32,7 +33,7 @@
 
 <!--  -->
 
-[CSSFoundationsProject]: https://www.theodinproject.com/lessons/foundations-intro-to-css
+[CSSFoundationsExercises]: https://www.theodinproject.com/lessons/foundations-intro-to-css
 [CSSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/01-css-methods
 [CSSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/01-css-methods/index.html
 [CSSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/02-class-id-selectors
