@@ -4,8 +4,10 @@
 
 |                                  |                                                             |                               |                               |
 | -------------------------------- | ----------------------------------------------------------- | ----------------------------- | ----------------------------- |
+| **HTML**                         |                                                             |                               |                               |
 | **Recipes**                      | [HTML Foundations Project][HTMLFoundationsProject]          | [Code][HTMLFoundationsCode]   | [Page][HTMLFoundationsPage]   |
-| **CSS Exercises**                |                                                             |                               |                               |
+|                                  |                                                             |                               |                               |
+| **CSS**                          |                                                             |                               |                               |
 | **Foundations**                  | [CSS Foundations Exercises][CSSFoundationsExercises]        |                               |                               |
 | 1. CSS Methods                   |                                                             | [Code][CSSFoundationsCode1]   | [View][CSSFoundationsPage1]   |
 | 2. Class and ID Selectors        |                                                             | [Code][CSSFoundationsCode2]   | [View][CSSFoundationsPage2]   |
@@ -25,6 +27,16 @@
 | 6. An entire page!               |                                                             | [Code][CSSFlexCode6]          | [View][CSSFlexPage6]          |
 | 7. The Holy Grail of Layout      |                                                             | [Code][CSSFlexCode7]          | [View][CSSFlexPage7]          |
 | **Landing Page**                 | [CSS Foundations Project][CSSFoundationsProject]            | [Code][CSSFoundationsCode]    | [View][CSSFoundationsPage]    |
+|                                  |                                                             |                               |                               |
+| **Javascript**                   |                                                             |                               |                               |
+| **Foundations**                  | [JS Foundations Exerecises][JSFoundationsExercises]         |                               |                               |
+| 1. Hello World                   |                                                             | [Code][JSFoundationsCode1]    | [View][JSFoundationsPage1]    |
+| 2. Repeat a String               |                                                             | [Code][JSFoundationsCode2]    | [View][JSFoundationsPage2]    |
+| 3. Reverse a String              |                                                             | [Code][JSFoundationsCode3]    | [View][JSFoundationsPage3]    |
+| 4. Remove From Array             |                                                             | [Code][JSFoundationsCode4]    | [View][JSFoundationsPage4]    |
+| 5. Sum All                       |                                                             | [Code][JSFoundationsCode5]    | [View][JSFoundationsPage5]    |
+| 6. Leap Years                    |                                                             | [Code][JSFoundationsCode6]    | [View][JSFoundationsPage6]    |
+| 7. Temperature Conversion        |                                                             | [Code][JSFoundationsCode7]    | [View][JSFoundationsPage7]    |
 |                                  |                                                             |                               |                               |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
@@ -72,3 +84,27 @@
 [CSSFlexPage6]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/06-flex-layout/
 [CSSFlexCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/07-flex-layout-2
 [CSSFlexPage7]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/07-flex-layout-2/
+
+<!--  -->
+
+[CSSFoundationsProject]: https://www.theodinproject.com/lessons/foundations-landing-page
+[CSSFoundationsCode]: https://github.com/fhmurakami/the-odin-project/tree/main/landing-page
+[CSSFoundationsPage]: https://fhmurakami.github.io/the-odin-project/landing-page/
+
+<!--  -->
+
+[JSFoundationsExercises]: https://www.theodinproject.com/lessons/foundations-arrays-and-loops
+[JSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/01_helloWorld
+[JSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/01_helloWorld/
+[JSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/02_repeatString
+[JSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/02_repeatString/
+[JSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/03_reverseString
+[JSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/03_reverseString/
+[JSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/04_removeFromArray
+[JSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/04_removeFromArray/
+[JSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/05_sumAll
+[JSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/05_sumAll/
+[JSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/06_leapYears
+[JSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/06_leapYears/
+[JSFoundationsCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/07_tempConversion
+[JSFoundationsPage7]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/07_tempConversion/
