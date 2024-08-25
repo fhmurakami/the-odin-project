@@ -1,56 +1,89 @@
+let humanScore = 0;
+let computerScore = 0;
+const buttonsDiv = document.querySelector(".buttons");
+const scoreDiv = document.querySelector(".results");
+const score = document.createElement("h2");
+const roundResult = document.createElement("p");
+const finalResult = document.createElement("p");
+finalResult.setAttribute("class", "final-result");
+scoreDiv.appendChild(score);
+scoreDiv.appendChild(roundResult);
+scoreDiv.appendChild(finalResult);
+
 function getComputerChoice() {
   computerChoice = Math.floor(Math.random() * 3);
 
   if (computerChoice === 1) {
-    return "rock";
+    return "🪨";
   } else if (computerChoice === 2) {
-    return "paper";
+    return "📄";
   } else {
-    return "scissors";
+    return "✂️";
   }
-}
-
-function getHumanChoice() {
-  humanChoice = prompt("🪨 📄 ✂️ (rock paper scissors)").toLowerCase();
-
-  return humanChoice;
 }
 
 function playRound(humanChoice, computerChoice) {
   if (humanChoice == computerChoice) {
-    console.log(`Draw! ${humanChoice} is equal to ${computerChoice}`);
+    roundResult.textContent = `Draw! ${humanChoice} is equal to ${computerChoice}`;
   } else if (
-    (humanChoice == "rock" && computerChoice == "scissors") ||
-    (humanChoice == "paper" && computerChoice == "rock") ||
-    (humanChoice == "scissors" && computerChoice == "paper")
+    (humanChoice == "🪨" && computerChoice == "✂️") ||
+    (humanChoice == "📄" && computerChoice == "🪨") ||
+    (humanChoice == "✂️" && computerChoice == "📄")
   ) {
-    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-    humanScore += 1;
+    roundResult.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
+    humanScore++;
   } else {
-    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+    roundResult.textContent = `You lose! ${computerChoice} beats ${humanChoice}`;
     computerScore++;
+  }
+  score.textContent = `You ${humanScore} x ${computerScore} Computer`;
+
+  if (humanScore == 5 || computerScore == 5) {
+    setTimeout(restart, 5000);
+    [...buttonsDiv.children].forEach((button) => {
+      button.disabled = true;
+    });
+
+    if (humanScore > computerScore) {
+      finalResult.textContent = `You win! The final score is: ${humanScore} x ${computerScore}.`;
+    } else if (humanScore < computerScore) {
+      finalResult.textContent = `You lose! The final score is: ${humanScore} x ${computerScore}.`;
+    } else {
+      finalResult.textContent = `It's a draw! The final score is: ${humanScore} x ${computerScore}.`;
+    }
+
+    const reloadingParagraph = document.createElement("p");
+    reloadingParagraph.textContent = "Reloading...";
+    scoreDiv.appendChild(reloadingParagraph);
   }
 }
 
 function playGame() {
+  buttonsDiv.addEventListener("click", (event) => {
+    let target = event.target;
+
+    switch (target.className) {
+      case "rock":
+        playRound("🪨", getComputerChoice());
+        break;
+      case "paper":
+        playRound("📄", getComputerChoice());
+        break;
+      case "scissors":
+        playRound("✂️", getComputerChoice());
+        break;
+    }
+  });
+}
+
+function restart() {
+  [...buttonsDiv.children].forEach((button) => {
+    button.disabled = false;
+  });
+  scoreDiv.lastChild.remove();
   humanScore = 0;
   computerScore = 0;
-
-  for (i = 0; i < 5; i++) {
-    playRound(getHumanChoice(), getComputerChoice());
-  }
-
-  if (humanScore > computerScore) {
-    console.log(
-      `You win! The final score is: ${humanScore} x ${computerScore}.`
-    );
-  } else if (humanScore < computerChoice) {
-    console.log(
-      `You lose! The final score is: ${humanScore} x ${computerScore}.`
-    );
-  } else {
-    console.log(
-      `It's a draw! The final score is: ${humanScore} x ${computerScore}.`
-    );
-  }
+  roundResult.textContent = "";
+  finalResult.textContent = "";
+  score.textContent = `You ${humanScore} x ${computerScore} Computer`;
 }
