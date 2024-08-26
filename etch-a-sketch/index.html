@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="grid-size">
+      <img src="images/grid-pattern.svg" alt="Change grid size button" />
+    </button>
+    <span>Change grid size</span>
+
+    <div class="container"></div>
+    <div class="buttons-container">
+      <button class="brush">
+        <img class="brush-img" src="images/brush-off.svg" alt="brush button" />
+      </button>
+      <button class="eraser">
+        <img class="eraser-img" src="images/eraser.svg" alt="eraser button" />
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", setup());
+    </script>
+  </body>
+</html>

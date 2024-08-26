@@ -2,42 +2,44 @@
 
 ## Projects
 
-|                                    |                                                             |                               |                               |
-| ---------------------------------- | ----------------------------------------------------------- | ----------------------------- | ----------------------------- |
-| <h3>**HTML**</h3>                  |                                                             |                               |                               |
-| <h4>**Recipes**</h4>               | [HTML Foundations Project][HTMLFoundationsProject]          | [Code][HTMLFoundationsCode]   | [Page][HTMLFoundationsPage]   |
-|                                    |                                                             |                               |                               |
-| <h3>**CSS**</h3>                   |                                                             |                               |                               |
-| <h4>**Foundations**</h4>           | [CSS Foundations Exercises][CSSFoundationsExercises]        |                               |                               |
-| 1. CSS Methods                     |                                                             | [Code][CSSFoundationsCode1]   | [View][CSSFoundationsPage1]   |
-| 2. Class and ID Selectors          |                                                             | [Code][CSSFoundationsCode2]   | [View][CSSFoundationsPage2]   |
-| 3. Grouping Selectors              |                                                             | [Code][CSSFoundationsCode3]   | [View][CSSFoundationsPage3]   |
-| 4. Chaining Selectors              |                                                             | [Code][CSSFoundationsCode4]   | [View][CSSFoundationsPage4]   |
-| 5. Descendant Combinator           |                                                             | [Code][CSSFoundationsCode5]   | [View][CSSFoundationsPage5]   |
-| 6. CSS Cascade Fix                 |                                                             | [Code][CSSFoundationsCode6]   | [View][CSSFoundationsPage6]   |
-| <h4>**Margin and Padding**</h4>    | [CSS Margin and Padding Exercises][CSSMarginPaddingProject] |                               |                               |
-| 1. Margin and Padding practice     |                                                             | [Code][CSSMarginPaddingCode1] | [View][CSSMarginPaddingPage1] |
-| 2. Margin and Padding #2           |                                                             | [Code][CSSMarginPaddingCode2] | [View][CSSMarginPaddingPage2] |
-| <h4>**Flex**</h4>                  | [CSS Flex Exercises][CSSFlexProject]                        |                               |                               |
-| 1. CENTER THIS DIV                 |                                                             | [Code][CSSFlexCode1]          | [View][CSSFlexPage1]          |
-| 2. A Basic Header                  |                                                             | [Code][CSSFlexCode2]          | [View][CSSFlexPage2]          |
-| 3. Another common header style     |                                                             | [Code][CSSFlexCode3]          | [View][CSSFlexPage3]          |
-| 4. A very common website feature   |                                                             | [Code][CSSFlexCode4]          | [View][CSSFlexPage4]          |
-| 5. A common 'modal' style          |                                                             | [Code][CSSFlexCode5]          | [View][CSSFlexPage5]          |
-| 6. An entire page!                 |                                                             | [Code][CSSFlexCode6]          | [View][CSSFlexPage6]          |
-| 7. The Holy Grail of Layout        |                                                             | [Code][CSSFlexCode7]          | [View][CSSFlexPage7]          |
-| <h4>**Landing Page**</h4>          | [CSS Foundations Project][CSSFoundationsProject]            | [Code][CSSFoundationsCode]    | [View][CSSFoundationsPage]    |
-|                                    |                                                             |                               |                               |
-| <h3>**Javascript**</h3>            |                                                             |                               |                               |
-| <h4>**Foundations**</h4>           | [JS Foundations Exercises][JSFoundationsExercises]          |                               |                               |
-| 1. Hello World                     |                                                             | [Code][JSFoundationsCode1]    | [View][JSFoundationsPage1]    |
-| 2. Repeat a String                 |                                                             | [Code][JSFoundationsCode2]    | [View][JSFoundationsPage2]    |
-| 3. Reverse a String                |                                                             | [Code][JSFoundationsCode3]    | [View][JSFoundationsPage3]    |
-| 4. Remove From Array               |                                                             | [Code][JSFoundationsCode4]    | [View][JSFoundationsPage4]    |
-| 5. Sum All                         |                                                             | [Code][JSFoundationsCode5]    | [View][JSFoundationsPage5]    |
-| 6. Leap Years                      |                                                             | [Code][JSFoundationsCode6]    | [View][JSFoundationsPage6]    |
-| 7. Temperature Conversion          |                                                             | [Code][JSFoundationsCode7]    | [View][JSFoundationsPage7]    |
-| <h4>**Rock, Paper, Scissors**</h4> | [JS Rock, Paper, Scissors Project][JS-RPSProject]           | [Code][JS-RPSProjectCode]     | [View][JS-RPSProjectPage]     |
+|                                    |                                                             |                                 |                                 |
+| ---------------------------------- | ----------------------------------------------------------- | ------------------------------- | ------------------------------- |
+| <h3>**HTML**</h3>                  |                                                             |                                 |                                 |
+| <h4>**Recipes**</h4>               | [HTML Foundations Project][HTMLFoundationsProject]          | [Code][HTMLFoundationsCode]     | [Page][HTMLFoundationsPage]     |
+|                                    |                                                             |                                 |                                 |
+| <h3>**CSS**</h3>                   |                                                             |                                 |                                 |
+| <h4>**Foundations**</h4>           | [CSS Foundations Exercises][CSSFoundationsExercises]        |                                 |                                 |
+| 1. CSS Methods                     |                                                             | [Code][CSSFoundationsCode1]     | [View][CSSFoundationsPage1]     |
+| 2. Class and ID Selectors          |                                                             | [Code][CSSFoundationsCode2]     | [View][CSSFoundationsPage2]     |
+| 3. Grouping Selectors              |                                                             | [Code][CSSFoundationsCode3]     | [View][CSSFoundationsPage3]     |
+| 4. Chaining Selectors              |                                                             | [Code][CSSFoundationsCode4]     | [View][CSSFoundationsPage4]     |
+| 5. Descendant Combinator           |                                                             | [Code][CSSFoundationsCode5]     | [View][CSSFoundationsPage5]     |
+| 6. CSS Cascade Fix                 |                                                             | [Code][CSSFoundationsCode6]     | [View][CSSFoundationsPage6]     |
+| <h4>**Margin and Padding**</h4>    | [CSS Margin and Padding Exercises][CSSMarginPaddingProject] |                                 |                                 |
+| 1. Margin and Padding practice     |                                                             | [Code][CSSMarginPaddingCode1]   | [View][CSSMarginPaddingPage1]   |
+| 2. Margin and Padding #2           |                                                             | [Code][CSSMarginPaddingCode2]   | [View][CSSMarginPaddingPage2]   |
+| <h4>**Flex**</h4>                  | [CSS Flex Exercises][CSSFlexProject]                        |                                 |                                 |
+| 1. CENTER THIS DIV                 |                                                             | [Code][CSSFlexCode1]            | [View][CSSFlexPage1]            |
+| 2. A Basic Header                  |                                                             | [Code][CSSFlexCode2]            | [View][CSSFlexPage2]            |
+| 3. Another common header style     |                                                             | [Code][CSSFlexCode3]            | [View][CSSFlexPage3]            |
+| 4. A very common website feature   |                                                             | [Code][CSSFlexCode4]            | [View][CSSFlexPage4]            |
+| 5. A common 'modal' style          |                                                             | [Code][CSSFlexCode5]            | [View][CSSFlexPage5]            |
+| 6. An entire page!                 |                                                             | [Code][CSSFlexCode6]            | [View][CSSFlexPage6]            |
+| 7. The Holy Grail of Layout        |                                                             | [Code][CSSFlexCode7]            | [View][CSSFlexPage7]            |
+| <h4>**Landing Page**</h4>          | [CSS Foundations Project][CSSFoundationsProject]            | [Code][CSSFoundationsCode]      | [View][CSSFoundationsPage]      |
+|                                    |                                                             |                                 |                                 |
+| <h3>**Javascript**</h3>            |                                                             |                                 |                                 |
+| <h4>**Foundations**</h4>           | [JS Foundations Exercises][JSFoundationsExercises]          |                                 |                                 |
+| 1. Hello World                     |                                                             | [Code][JSFoundationsCode1]      | [View][JSFoundationsPage1]      |
+| 2. Repeat a String                 |                                                             | [Code][JSFoundationsCode2]      | [View][JSFoundationsPage2]      |
+| 3. Reverse a String                |                                                             | [Code][JSFoundationsCode3]      | [View][JSFoundationsPage3]      |
+| 4. Remove From Array               |                                                             | [Code][JSFoundationsCode4]      | [View][JSFoundationsPage4]      |
+| 5. Sum All                         |                                                             | [Code][JSFoundationsCode5]      | [View][JSFoundationsPage5]      |
+| 6. Leap Years                      |                                                             | [Code][JSFoundationsCode6]      | [View][JSFoundationsPage6]      |
+| 7. Temperature Conversion          |                                                             | [Code][JSFoundationsCode7]      | [View][JSFoundationsPage7]      |
+| <h4>**Rock, Paper, Scissors**</h4> | [JS Rock, Paper, Scissors Project][JS-RPSProject]           | [Code][JS-RPSProjectCode]       | [View][JS-RPSProjectPage]       |
+| **Etch-a-Sketch**                  | [JS Etch-a-Sketch Project][JSEtchSketchProject]             | [Code][JSEtchSketchProjectCode] | [Page][JSEtchSketchProjectPage] |
+|                                    |                                                             |                                 |                                 |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
 [HTMLFoundationsCode]: ./odin-recipes/
@@ -112,5 +114,11 @@
 <!--  -->
 
 [JS-RPSProject]: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
-[JS-RPSCode]: https://github.com/fhmurakami/the-odin-project/tree/main/rock-paper-scissors
-[JS-RPSPage]: https://fhmurakami.github.io/the-odin-project/rock-paper-scissors/index.html
+[JS-RPSProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/rock-paper-scissors
+[JS-RPSProjectPage]: https://fhmurakami.github.io/the-odin-project/rock-paper-scissors/index.html
+
+<!--  -->
+
+[JSEtchSketchProject]: https://www.theodinproject.com/lessons/foundations-etch-a-sketch
+[JSEtchSketchProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/etch-a-sketch
+[JSEtchSketchProjectPage]: https://fhmurakami.github.io/the-odin-project/etch-a-sketch/index.html
