@@ -1,24 +1,27 @@
 const containerDiv = document.querySelector(".container");
 const brushButton = document.querySelector(".brush");
+const rainbowButton = document.querySelector(".rainbow");
 const eraserButton = document.querySelector(".eraser");
 const gridButton = document.querySelector(".grid-size");
 let firstSetup = true;
 let isBrushButtonClicked = false;
-let isEraserButtonClicked = true;
+let isEraserButtonClicked = false;
+let isRainbowButtonClicked = false;
 let isPainting = false;
+let isRainbowPainting = false;
 let isErasing = false;
 
 function setup(side = 16) {
   setGridSize(side);
   if (firstSetup) {
     firstSetup = false;
-    isBrushButtonClicked = true;
-    toggleEraser();
-    addEventListeners("paint");
+    enableBrush();
   } else if (isBrushButtonClicked) {
-    addEventListeners("paint");
+    enableBrush();
+  } else if (isRainbowButtonClicked) {
+    enableRainbow();
   } else if (isEraserButtonClicked) {
-    addEventListeners("erase");
+    enableEraser();
   }
 }
 
@@ -54,50 +57,109 @@ gridButton.addEventListener("click", () => {
 });
 
 brushButton.addEventListener("click", () => {
-  toggleBrush();
+  if (isBrushButtonClicked) {
+    disableBrush();
+  } else {
+    enableBrush();
+  }
+});
+
+rainbowButton.addEventListener("click", () => {
+  if (isRainbowButtonClicked) {
+    disableRainbow();
+  } else {
+    enableRainbow();
+  }
 });
 
 eraserButton.addEventListener("click", () => {
-  toggleEraser();
+  if (isEraserButtonClicked) {
+    disableEraser();
+  } else {
+    enableEraser();
+  }
 });
 
-function toggleBrush() {
+function enableBrush() {
   let image = document.querySelector(".brush-img");
 
-  if (!isPainting && isBrushButtonClicked == true) {
-    image.src = "./images/brush.svg";
-    isBrushButtonClicked = false;
-    isPainting = false;
-    removeEventListeners("paint");
-  } else {
+  if (!isPainting && isBrushButtonClicked == false) {
+    disableEraser();
+    disableRainbow();
+
     image.src = "./images/brush-off.svg";
     isBrushButtonClicked = true;
-    toggleEraser();
 
     addEventListeners("paint");
   }
 }
 
-function toggleEraser() {
+function disableBrush() {
+  let image = document.querySelector(".brush-img");
+
+  image.src = "./images/brush.svg";
+  isBrushButtonClicked = false;
+  isPainting = false;
+}
+
+function enableRainbow() {
+  let image = document.querySelector(".rainbow-img");
+
+  if (!isRainbowPainting && isRainbowButtonClicked == false) {
+    disableBrush();
+    disableEraser();
+
+    image.src = "./images/rainbow-off.svg";
+    isRainbowButtonClicked = true;
+
+    addEventListeners("paintRainbow");
+  }
+}
+
+function disableRainbow() {
+  let image = document.querySelector(".rainbow-img");
+
+  image.src = "./images/rainbow.svg";
+  isRainbowButtonClicked = false;
+  isRainbowPainting = false;
+}
+
+function enableEraser() {
   let image = document.querySelector(".eraser-img");
 
-  if (!isErasing && isEraserButtonClicked == true) {
-    image.src = "./images/eraser.svg";
-    isEraserButtonClicked = false;
-    isErasing = false;
+  if (!isErasing && isEraserButtonClicked == false) {
+    disableBrush();
+    disableRainbow();
 
-    removeEventListeners("erase");
-  } else {
     image.src = "./images/eraser-off.svg";
     isEraserButtonClicked = true;
-    toggleBrush();
 
     addEventListeners("erase");
   }
 }
 
+function disableEraser() {
+  let image = document.querySelector(".eraser-img");
+
+  image.src = "./images/eraser.svg";
+  isEraserButtonClicked = false;
+  isErasing = false;
+}
+
+function setRandomColor() {
+  return `rgb(
+    ${Math.random() * 255},
+    ${Math.random() * 255},
+    ${Math.random() * 255}
+    )`;
+}
+
 function paintSquare(target) {
-  target.style.backgroundColor = "#666";
+  target.style.backgroundColor = "var(--engineering-orange)";
+}
+
+function paintRainbowSquare(target) {
+  target.style.backgroundColor = setRandomColor();
 }
 
 function eraseSquare(target) {
@@ -114,6 +176,13 @@ function addEventListeners(func) {
         addPaintEvent(square, "mouseup");
       });
       break;
+    case "paintRainbow":
+      [...squareDivs].forEach((square) => {
+        addRainbowPaintEvent(square, "mousedown");
+        addRainbowPaintEvent(square, "mousemove");
+        addRainbowPaintEvent(square, "mouseup");
+      });
+      break;
     case "erase":
       [...squareDivs].forEach((square) => {
         addEraseEvent(square, "mousedown");
@@ -128,14 +197,16 @@ function addPaintEvent(target, event) {
   switch (event) {
     case "mousedown":
       target.addEventListener(event, (e) => {
-        isPainting = true;
-        e.preventDefault();
-        paintSquare(target);
+        if (isBrushButtonClicked) {
+          isPainting = true;
+          e.preventDefault();
+          paintSquare(target);
+        }
       });
       break;
     case "mousemove":
       target.addEventListener(event, () => {
-        if (isPainting) {
+        if (isPainting && isBrushButtonClicked) {
           paintSquare(target);
         }
       });
@@ -148,83 +219,52 @@ function addPaintEvent(target, event) {
   }
 }
 
-function addEraseEvent(target, event) {
+function addRainbowPaintEvent(target, event) {
   switch (event) {
     case "mousedown":
-      target.addEventListener(event, () => {
-        isErasing = true;
-        eraseSquare(target);
+      target.addEventListener(event, (e) => {
+        if (isRainbowButtonClicked) {
+          isRainbowPainting = true;
+          e.preventDefault();
+          paintRainbowSquare(target);
+        }
       });
       break;
     case "mousemove":
       target.addEventListener(event, () => {
-        if (isErasing) {
+        if (isRainbowPainting && isRainbowButtonClicked) {
+          paintRainbowSquare(target);
+        }
+      });
+      break;
+    case "mouseup":
+      target.addEventListener(event, () => {
+        isRainbowPainting = false;
+      });
+      break;
+  }
+}
+
+function addEraseEvent(target, event) {
+  switch (event) {
+    case "mousedown":
+      target.addEventListener(event, (e) => {
+        if (isEraserButtonClicked) {
+          isErasing = true;
+          e.preventDefault();
+          eraseSquare(target);
+        }
+      });
+      break;
+    case "mousemove":
+      target.addEventListener(event, () => {
+        if (isErasing && isEraserButtonClicked) {
           eraseSquare(target);
         }
       });
       break;
     case "mouseup":
       target.addEventListener(event, () => {
-        isErasing = false;
-      });
-      break;
-  }
-}
-
-function removeEventListeners(func) {
-  const squareDivs = document.querySelectorAll(".square");
-  switch (func) {
-    case "paint":
-      [...squareDivs].forEach((square) => {
-        removePaintEvent(square, "mousedown");
-        removePaintEvent(square, "mousemove");
-        removePaintEvent(square, "mouseup");
-      });
-      break;
-    case "erase":
-      [...squareDivs].forEach((square) => {
-        removeEraseEvent(square, "mousedown");
-        removeEraseEvent(square, "mousemove");
-        removeEraseEvent(square, "mouseup");
-      });
-      break;
-  }
-}
-
-function removePaintEvent(target, event) {
-  switch (event) {
-    case "mousedown":
-      target.removeEventListener(event, () => {
-        isPainting = false;
-      });
-      break;
-    case "mousemove":
-      target.removeEventListener(event, () => {
-        isPainting = false;
-      });
-      break;
-    case "mouseup":
-      target.removeEventListener(event, () => {
-        isPainting = false;
-      });
-      break;
-  }
-}
-
-function removeEraseEvent(target, event) {
-  switch (event) {
-    case "mousedown":
-      target.removeEventListener(event, () => {
-        isErasing = false;
-      });
-      break;
-    case "mousemove":
-      target.removeEventListener(event, () => {
-        isErasing = false;
-      });
-      break;
-    case "mouseup":
-      target.removeEventListener(event, () => {
         isErasing = false;
       });
       break;
