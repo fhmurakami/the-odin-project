@@ -1,3 +1,5 @@
+@import url("./fonts/orange-juice.css");
+
 :root {
   --engineering-orange: #b80c09;
   --engineering-orange-light: #fa9f9e;
@@ -10,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1em;
 }
 
 body {
@@ -21,8 +24,31 @@ body {
   align-items: center;
 }
 
+.title {
+  color: var(--engineering-orange);
+  font-family: "orange juice", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-size: 1.5rem;
+  color: var(--timberwolf);
+}
+
+span.top {
+  margin-bottom: 5px;
+}
+
+span.bottom {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
 .container {
-  width: 800px;
+  width: 640px;
   height: auto;
   border-radius: 10px;
   background-color: var(--timberwolf);
@@ -65,18 +91,4 @@ button {
   background-color: var(--night);
   width: 50px;
   border-radius: 5px;
-}
-
-span {
-  font-size: 24px;
-  color: var(--timberwolf);
-}
-
-span.top {
-  margin-bottom: 5px;
-}
-
-span.bottom {
-  margin-top: 5px;
-  margin-bottom: 25px;
 }
