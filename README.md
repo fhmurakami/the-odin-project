@@ -39,6 +39,11 @@
 | 7. Temperature Conversion          |                                                             | [Code][JSFoundationsCode7]      | [View][JSFoundationsPage7]      |
 | <h4>**Rock, Paper, Scissors**</h4> | [JS Rock, Paper, Scissors Project][JS-RPSProject]           | [Code][JS-RPSProjectCode]       | [View][JS-RPSProjectPage]       |
 | **Etch-a-Sketch**                  | [JS Etch-a-Sketch Project][JSEtchSketchProject]             | [Code][JSEtchSketchProjectCode] | [Page][JSEtchSketchProjectPage] |
+| 8. Calculator                      |                                                             | [Code][JSFoundationsCode8]      | [View][JSFoundationsPage8]      |
+| 9. Palindromes                     |                                                             | [Code][JSFoundationsCode9]      | [View][JSFoundationsPage9]      |
+| 10. Fibonacci                      |                                                             | [Code][JSFoundationsCode10]     | [View][JSFoundationsPage10]     |
+| 11. Get The Titles                 |                                                             | [Code][JSFoundationsCode11]     | [View][JSFoundationsPage11]     |
+| 12. Find The Oldest                |                                                             | [Code][JSFoundationsCode12]     | [View][JSFoundationsPage12]     |
 |                                    |                                                             |                                 |                                 |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
@@ -110,6 +115,16 @@
 [JSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/06_leapYears/
 [JSFoundationsCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/07_tempConversion
 [JSFoundationsPage7]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/07_tempConversion/
+[JSFoundationsCode8]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/08_calculator
+[JSFoundationsPage8]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/08_calculator/
+[JSFoundationsCode9]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/09_palindromes
+[JSFoundationsPage9]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/09_palindromes/
+[JSFoundationsCode10]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/10_fibonacci
+[JSFoundationsPage10]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/10_fibonacci/
+[JSFoundationsCode11]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/11_getTheTitles
+[JSFoundationsPage11]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/11_getTheTitles/
+[JSFoundationsCode12]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/12_findTheOldest
+[JSFoundationsPage12]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/12_findTheOldest/
 
 <!--  -->
 
