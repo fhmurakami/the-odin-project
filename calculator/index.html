@@ -6,6 +6,12 @@
     <title>Do some Mathemagic! 🪄</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/c0f7d4f463.js"
       crossorigin="anonymous"
@@ -15,52 +21,55 @@
     <div class="container">
       <div class="calc-body">
         <div class="upper-body">
-          <div class="screen"></div>
+          <div class="display"></div>
         </div>
         <div class="lower-body">
           <div class="left">
             <div class="clear-buttons">
-              <div class="button clear"><i class="fa-solid fa-c"></i></div>
-              <div class="button backspace">
+              <button class="clear"><i class="fa-solid fa-c"></i></button>
+              <button class="backspace">
                 <i class="fa-solid fa-delete-left"></i>
-              </div>
+              </button>
             </div>
             <div class="numbers">
               <div class="row">
-                <div class="button number9"><i class="fa-solid fa-9"></i></div>
-                <div class="button number8"><i class="fa-solid fa-8"></i></div>
-                <div class="button number7"><i class="fa-solid fa-7"></i></div>
+                <button class="number9">
+                  <i class="number9 fa-solid fa-9"></i>
+                </button>
+                <button class="number8"><i class="fa-solid fa-8"></i></button>
+                <button class="number7"><i class="fa-solid fa-7"></i></button>
               </div>
               <div class="row">
-                <div class="button number6"><i class="fa-solid fa-6"></i></div>
-                <div class="button number5"><i class="fa-solid fa-5"></i></div>
-                <div class="button number4"><i class="fa-solid fa-4"></i></div>
+                <button class="number6"><i class="fa-solid fa-6"></i></button>
+                <button class="number5"><i class="fa-solid fa-5"></i></button>
+                <button class="number4"><i class="fa-solid fa-4"></i></button>
               </div>
               <div class="row">
-                <div class="button number3"><i class="fa-solid fa-3"></i></div>
-                <div class="button number2"><i class="fa-solid fa-2"></i></div>
-                <div class="button number1"><i class="fa-solid fa-1"></i></div>
+                <button class="number3"><i class="fa-solid fa-3"></i></button>
+                <button class="number2"><i class="fa-solid fa-2"></i></button>
+                <button class="number1"><i class="fa-solid fa-1"></i></button>
               </div>
               <div class="row">
-                <div class="button dot"><i class="fa-solid fa-square"></i></div>
-                <div class="button number0"><i class="fa-solid fa-0"></i></div>
-                <div class="button signal">
+                <button class="dot"><i class="fa-solid fa-square"></i></button>
+                <button class="number0"><i class="fa-solid fa-0"></i></button>
+                <button class="signal">
                   <i class="fa-solid fa-plus-minus"></i>
-                </div>
+                </button>
               </div>
             </div>
           </div>
           <div class="operations">
-            <div class="button divide"><i class="fa-solid fa-divide"></i></div>
-            <div class="button multiply"><i class="fa-solid fa-xmark"></i></div>
-            <div class="button subtract"><i class="fa-solid fa-minus"></i></div>
-            <div class="button add"><i class="fa-solid fa-plus"></i></div>
-            <div class="button calculate">
+            <button class="divide"><i class="fa-solid fa-divide"></i></button>
+            <button class="multiply"><i class="fa-solid fa-xmark"></i></button>
+            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+            <button class="add"><i class="fa-solid fa-plus"></i></button>
+            <button class="calculate">
               <i class="fa-solid fa-equals"></i>
-            </div>
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
