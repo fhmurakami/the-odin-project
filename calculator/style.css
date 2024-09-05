@@ -65,6 +65,7 @@ body {
   background-color: var(--display);
   box-shadow: inset 0px 5px 10px 5px var(--black-shadow),
     inset 0px -10px 5px -5px var(--white-shadow);
+  overflow: hidden; /* This is just to hide the numbers overflowing the display */
 }
 
 .lower-body {

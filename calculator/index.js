@@ -2,11 +2,11 @@ const display = document.querySelector(".display");
 const dotButton = document.querySelector(".dot");
 const numberButtons = document.querySelectorAll(".numbers button");
 const clearButton = document.querySelector(".clear");
-let counter = 0;
+const operationButtons = document.querySelectorAll(".operations button");
+let signalCounter = 0;
 let firstNumber;
 let secondNumber;
 let operator;
-let result;
 let displayValue;
 
 function setup() {
@@ -35,22 +35,31 @@ function setDisplayValue(char) {
 }
 
 function showDisplay(displayValue) {
+  // TODO: limit the number to not overflow the display
   display.textContent = displayValue;
 }
 
 function operate(operator, firstNumber, secondNumber) {
   switch (operator) {
     case "+":
-      result = firstNumber + secondNumber;
+      displayValue = firstNumber + secondNumber;
+      showDisplay(displayValue);
+
       break;
     case "-":
-      result = firstNumber - secondNumber;
+      displayValue = firstNumber - secondNumber;
+      showDisplay(displayValue);
+
       break;
     case "*":
-      result = firstNumber * secondNumber;
+      displayValue = firstNumber * secondNumber;
+      showDisplay(displayValue);
+
       break;
     case "/":
-      result = firstNumber / secondNumber;
+      displayValue = firstNumber / secondNumber;
+      showDisplay(displayValue);
+
       break;
     default:
       break;
@@ -93,18 +102,14 @@ function operate(operator, firstNumber, secondNumber) {
         break;
       case "dot":
         setDisplayValue(".");
-        button.style.animation = "rotate 2s 1";
-        setTimeout(() => {
-          button.firstChild.style.display = "none";
-        }, 500);
-        button.disabled = true;
+        disableDotButton();
         break;
       case "signal":
-        if (counter == 0) {
-          counter = 1;
+        if (signalCounter == 0) {
+          signalCounter = 1;
           setDisplayValue("-");
         } else {
-          counter = 0;
+          signalCounter = 0;
           setDisplayValue("+");
         }
         break;
@@ -115,23 +120,67 @@ function operate(operator, firstNumber, secondNumber) {
   });
 });
 
-dotButton.addEventListener("click", (e) => {
-  const target = e.target;
-  if (counter == 0) {
-    // target.style.animation = "rotate 2s 1";
-    // setTimeout(() => {
-    //   target.firstChild.style.display = "none";
-    // }, 500);
-    // target.disabled = true;
-    counter = 1;
-  } else {
-    target.style.animation = "rotate-reversed 2s 1";
+[...operationButtons].forEach((button) => {
+  button.addEventListener("click", () => {
+    const className = button.className;
+    switch (className) {
+      case "add":
+        firstNumber = +displayValue;
+        operator = "+";
+        displayValue = "";
+        showDisplay(displayValue);
+        break;
+      case "subtract":
+        firstNumber = +displayValue;
+        operator = "-";
+        displayValue = "";
+        showDisplay(displayValue);
+        break;
+      case "multiply":
+        firstNumber = +displayValue;
+        operator = "*";
+        displayValue = "";
+        showDisplay(displayValue);
+        break;
+      case "divide":
+        firstNumber = +displayValue;
+        operator = "/";
+        displayValue = "";
+        showDisplay(displayValue);
+        break;
+      case "calculate":
+        secondNumber = +displayValue;
+        displayValue = "";
+        setTimeout(operate(operator, firstNumber, secondNumber), 1000);
+        break;
+
+      default:
+        break;
+    }
+    enableDotButton();
+  });
+});
+
+function disableDotButton() {
+  if (dotButton.disabled == false) {
+    dotButton.style.animation = "rotate 2s 1";
     setTimeout(() => {
-      target.firstChild.style.display = "var(--fa-display, inline-block)";
+      dotButton.firstChild.style.display = "none";
+    }, 500);
+    dotButton.disabled = true;
+  }
+}
+
+function enableDotButton() {
+  if (dotButton.disabled == true) {
+    dotButton.style.animation = "rotate-reversed 2s 1";
+    setTimeout(() => {
+      dotButton.firstChild.style.display = "var(--fa-display, inline-block)";
     }, 600);
+    dotButton.disabled = false;
     counter = 0;
   }
-});
+}
 
 clearButton.addEventListener("click", (e) => {
   setup();
