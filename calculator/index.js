@@ -4,10 +4,11 @@ const numberButtons = document.querySelectorAll(".numbers button");
 const clearButton = document.querySelector(".clear");
 const backspaceButton = document.querySelector(".backspace");
 const operationButtons = document.querySelectorAll(".operations button");
-let signalCounter = 0;
+let signalPressed = false;
 let firstNumber;
 let secondNumber;
 let operator;
+let lastOperator;
 let displayValue;
 
 function setup() {
@@ -19,14 +20,17 @@ function clear() {
   firstNumber = undefined;
   secondNumber = undefined;
   operator = undefined;
-  result = undefined;
+  lastOperator = undefined;
   displayValue = "";
 }
 
 function setDisplayValue(char) {
-  console.log(char);
   if (char == "-") {
-    displayValue = char + displayValue;
+    if (displayValue == "") {
+      displayValue = char + firstNumber;
+    } else {
+      displayValue = char + displayValue;
+    }
   } else if (char == "+") {
     if (displayValue.at(0) == "-") displayValue = displayValue.slice(1);
   } else {
@@ -40,30 +44,56 @@ function showDisplay(displayValue) {
   display.textContent = displayValue;
 }
 
-function operate(operator, firstNumber, secondNumber) {
-  switch (operator) {
+function updateValues(value) {
+  displayValue = "";
+  firstNumber = value;
+  secondNumber = undefined;
+  showDisplay(value);
+}
+
+function operate(symbol, a, b) {
+  let result;
+  switch (symbol) {
     case "+":
-      displayValue = firstNumber + secondNumber;
-      showDisplay(displayValue);
+      result = a + b;
+      updateValues(result);
 
       break;
     case "-":
-      displayValue = firstNumber - secondNumber;
-      showDisplay(displayValue);
+      result = a - b;
+      updateValues(result);
 
       break;
     case "*":
-      displayValue = firstNumber * secondNumber;
-      showDisplay(displayValue);
+      result = a * b;
+      updateValues(result);
 
       break;
     case "/":
-      displayValue = firstNumber / secondNumber;
-      showDisplay(displayValue);
+      result = a / b;
+      updateValues(result);
 
       break;
-    default:
-      break;
+  }
+}
+
+function disableDotButton() {
+  if (dotButton.disabled == false) {
+    dotButton.style.animation = "rotate 2s 1";
+    setTimeout(() => {
+      dotButton.firstChild.style.display = "none";
+    }, 500);
+    dotButton.disabled = true;
+  }
+}
+
+function enableDotButton() {
+  if (dotButton.disabled == true) {
+    dotButton.style.animation = "rotate-reversed 2s 1";
+    setTimeout(() => {
+      dotButton.firstChild.style.display = "var(--fa-display, inline-block)";
+    }, 600);
+    dotButton.disabled = false;
   }
 }
 
@@ -102,15 +132,18 @@ function operate(operator, firstNumber, secondNumber) {
         setDisplayValue("9");
         break;
       case "dot":
+        if (displayValue == "") {
+          setDisplayValue("0");
+        }
         setDisplayValue(".");
         disableDotButton();
         break;
       case "signal":
-        if (signalCounter == 0) {
-          signalCounter = 1;
+        if (signalPressed == false) {
+          signalPressed = true;
           setDisplayValue("-");
         } else {
-          signalCounter = 0;
+          signalPressed = false;
           setDisplayValue("+");
         }
         break;
@@ -123,65 +156,85 @@ function operate(operator, firstNumber, secondNumber) {
 
 [...operationButtons].forEach((button) => {
   button.addEventListener("click", () => {
+    if (lastOperator && firstNumber) {
+      secondNumber = +displayValue;
+      setTimeout(operate, 200, lastOperator, firstNumber, secondNumber);
+      clear();
+      showDisplay(displayValue);
+    }
+
     const className = button.className;
     switch (className) {
       case "add":
-        firstNumber = +displayValue;
         operator = "+";
-        displayValue = "";
-        showDisplay(displayValue);
+        lastOperator = operator;
+        if (firstNumber) {
+          secondNumber = +displayValue;
+          setTimeout(operate, 200, operator, firstNumber, secondNumber);
+          displayValue = "";
+          showDisplay(displayValue);
+        } else {
+          firstNumber = +displayValue;
+          displayValue = "";
+          showDisplay(displayValue);
+        }
         break;
       case "subtract":
-        firstNumber = +displayValue;
         operator = "-";
-        displayValue = "";
-        showDisplay(displayValue);
+        lastOperator = operator;
+        if (firstNumber) {
+          secondNumber = +displayValue;
+          setTimeout(operate, 200, operator, firstNumber, secondNumber);
+          displayValue = "";
+          showDisplay(displayValue);
+        } else {
+          firstNumber = +displayValue;
+          displayValue = "";
+          showDisplay(displayValue);
+        }
         break;
       case "multiply":
-        firstNumber = +displayValue;
         operator = "*";
-        displayValue = "";
-        showDisplay(displayValue);
+        lastOperator = operator;
+        if (firstNumber) {
+          secondNumber = +displayValue;
+          setTimeout(operate, 200, operator, firstNumber, secondNumber);
+          displayValue = "";
+          showDisplay(displayValue);
+        } else {
+          firstNumber = +displayValue;
+          displayValue = "";
+          showDisplay(displayValue);
+        }
         break;
       case "divide":
-        firstNumber = +displayValue;
         operator = "/";
-        displayValue = "";
-        showDisplay(displayValue);
+        lastOperator = operator;
+        if (firstNumber) {
+          secondNumber = +displayValue;
+          setTimeout(operate, 200, operator, firstNumber, secondNumber);
+          displayValue = "";
+          showDisplay(displayValue);
+        } else {
+          firstNumber = +displayValue;
+          displayValue = "";
+          showDisplay(displayValue);
+        }
         break;
       case "calculate":
-        secondNumber = +displayValue;
-        displayValue = "";
-        setTimeout(operate(operator, firstNumber, secondNumber), 1000);
-        break;
-
-      default:
+        lastOperator = undefined;
+        if (firstNumber) {
+          secondNumber = +displayValue;
+          setTimeout(operate, 200, operator, firstNumber, secondNumber);
+          clear();
+          showDisplay(displayValue);
+        }
         break;
     }
+
     enableDotButton();
   });
 });
-
-function disableDotButton() {
-  if (dotButton.disabled == false) {
-    dotButton.style.animation = "rotate 2s 1";
-    setTimeout(() => {
-      dotButton.firstChild.style.display = "none";
-    }, 500);
-    dotButton.disabled = true;
-  }
-}
-
-function enableDotButton() {
-  if (dotButton.disabled == true) {
-    dotButton.style.animation = "rotate-reversed 2s 1";
-    setTimeout(() => {
-      dotButton.firstChild.style.display = "var(--fa-display, inline-block)";
-    }, 600);
-    dotButton.disabled = false;
-    counter = 0;
-  }
-}
 
 clearButton.addEventListener("click", (e) => {
   setup();
