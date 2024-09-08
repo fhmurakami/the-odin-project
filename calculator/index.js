@@ -23,6 +23,7 @@ function setup() {
 
 function clear() {
   enableDotButton();
+  signalPressed = false;
   firstNumber = undefined;
   secondNumber = undefined;
   operator = undefined;
@@ -35,7 +36,7 @@ function setDisplayValue(char) {
     displayValue = displayValue.slice(1);
   }
   if (char == "-") {
-    if (displayValue == "") {
+    if (displayValue == "" && firstNumber) {
       displayValue = char + firstNumber;
     } else {
       displayValue = char + displayValue;
@@ -165,7 +166,7 @@ function enableDotButton() {
         disableDotButton();
         break;
       case "signal":
-        if (signalPressed == false) {
+        if (signalPressed == false && displayValue != "") {
           signalPressed = true;
           setDisplayValue("-");
         } else {
@@ -182,6 +183,7 @@ function enableDotButton() {
 
 [...operationButtons].forEach((button) => {
   button.addEventListener("click", () => {
+    signalPressed = false;
     if (lastOperator && firstNumber) {
       secondNumber = +displayValue;
       setTimeout(operate, 200, lastOperator, firstNumber, secondNumber);
@@ -212,6 +214,7 @@ function enableDotButton() {
         firstNumber === undefined ? setFirstNumber() : setSecondNumber();
         break;
       case "calculate":
+        setTimeout(clear, 200);
     }
 
     enableDotButton();
