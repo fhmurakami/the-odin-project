@@ -4,6 +4,7 @@ const numberButtons = document.querySelectorAll(".numbers button");
 const clearButton = document.querySelector(".clear");
 const backspaceButton = document.querySelector(".backspace");
 const operationButtons = document.querySelectorAll(".operations button");
+const bugSymbol = document.createElement("i");
 let signalPressed = false;
 let firstNumber;
 let secondNumber;
@@ -11,12 +12,17 @@ let operator;
 let lastOperator;
 let displayValue;
 
+bugSymbol.setAttribute("class", "fa-solid fa-bug");
+bugSymbol.style.fontSize = "4rem";
+bugSymbol.style.verticalAlign = "25%";
+
 function setup() {
   clear();
   showDisplay(displayValue);
 }
 
 function clear() {
+  enableDotButton();
   firstNumber = undefined;
   secondNumber = undefined;
   operator = undefined;
@@ -25,6 +31,9 @@ function clear() {
 }
 
 function setDisplayValue(char) {
+  if (displayValue.length > 2 && displayValue.at(1) != ".") {
+    displayValue = displayValue.slice(1);
+  }
   if (char == "-") {
     if (displayValue == "") {
       displayValue = char + firstNumber;
@@ -47,7 +56,6 @@ function showDisplay(displayValue) {
 function updateValues(value) {
   displayValue = "";
   firstNumber = value;
-  secondNumber = undefined;
   showDisplay(value);
 }
 
@@ -70,11 +78,29 @@ function operate(symbol, a, b) {
 
       break;
     case "/":
-      result = a / b;
-      updateValues(result);
+      if (b == 0) {
+        clear();
+
+        display.appendChild(bugSymbol);
+      } else {
+        result = a / b;
+        updateValues(result);
+      }
 
       break;
   }
+}
+
+function setFirstNumber() {
+  firstNumber = +displayValue;
+  displayValue = "";
+  showDisplay(displayValue);
+}
+
+function setSecondNumber() {
+  secondNumber = +displayValue;
+  displayValue = "";
+  showDisplay(displayValue);
 }
 
 function disableDotButton() {
@@ -160,7 +186,7 @@ function enableDotButton() {
       secondNumber = +displayValue;
       setTimeout(operate, 200, lastOperator, firstNumber, secondNumber);
       clear();
-      showDisplay(displayValue);
+      showDisplay("");
     }
 
     const className = button.className;
@@ -168,68 +194,24 @@ function enableDotButton() {
       case "add":
         operator = "+";
         lastOperator = operator;
-        if (firstNumber) {
-          secondNumber = +displayValue;
-          setTimeout(operate, 200, operator, firstNumber, secondNumber);
-          displayValue = "";
-          showDisplay(displayValue);
-        } else {
-          firstNumber = +displayValue;
-          displayValue = "";
-          showDisplay(displayValue);
-        }
+        firstNumber === undefined ? setFirstNumber() : setSecondNumber();
         break;
       case "subtract":
         operator = "-";
         lastOperator = operator;
-        if (firstNumber) {
-          secondNumber = +displayValue;
-          setTimeout(operate, 200, operator, firstNumber, secondNumber);
-          displayValue = "";
-          showDisplay(displayValue);
-        } else {
-          firstNumber = +displayValue;
-          displayValue = "";
-          showDisplay(displayValue);
-        }
+        firstNumber === undefined ? setFirstNumber() : setSecondNumber();
         break;
       case "multiply":
         operator = "*";
         lastOperator = operator;
-        if (firstNumber) {
-          secondNumber = +displayValue;
-          setTimeout(operate, 200, operator, firstNumber, secondNumber);
-          displayValue = "";
-          showDisplay(displayValue);
-        } else {
-          firstNumber = +displayValue;
-          displayValue = "";
-          showDisplay(displayValue);
-        }
+        firstNumber === undefined ? setFirstNumber() : setSecondNumber();
         break;
       case "divide":
         operator = "/";
         lastOperator = operator;
-        if (firstNumber) {
-          secondNumber = +displayValue;
-          setTimeout(operate, 200, operator, firstNumber, secondNumber);
-          displayValue = "";
-          showDisplay(displayValue);
-        } else {
-          firstNumber = +displayValue;
-          displayValue = "";
-          showDisplay(displayValue);
-        }
+        firstNumber === undefined ? setFirstNumber() : setSecondNumber();
         break;
       case "calculate":
-        lastOperator = undefined;
-        if (firstNumber) {
-          secondNumber = +displayValue;
-          setTimeout(operate, 200, operator, firstNumber, secondNumber);
-          clear();
-          showDisplay(displayValue);
-        }
-        break;
     }
 
     enableDotButton();
