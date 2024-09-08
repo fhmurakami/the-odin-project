@@ -2,6 +2,7 @@ const display = document.querySelector(".display");
 const dotButton = document.querySelector(".dot");
 const numberButtons = document.querySelectorAll(".numbers button");
 const clearButton = document.querySelector(".clear");
+const backspaceButton = document.querySelector(".backspace");
 const operationButtons = document.querySelectorAll(".operations button");
 let signalCounter = 0;
 let firstNumber;
@@ -184,6 +185,11 @@ function enableDotButton() {
 
 clearButton.addEventListener("click", (e) => {
   setup();
+});
+
+backspaceButton.addEventListener("click", () => {
+  displayValue = displayValue.slice(0, -1);
+  showDisplay(displayValue);
 });
 
 setup();
