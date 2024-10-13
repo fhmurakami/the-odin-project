@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="logo">
+          <img
+            class="logo-image"
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="The Odin Project logo"
+          />
+          <p class="logo-text">Odin</p>
+        </div>
+        <footer>
+          <small
+            >Photo by
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+            <a href="https://unsplash.com">Unsplash</a></small
+          >
+        </footer>
+      </aside>
+      <section>
+        <div class="text-container">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p class="subtext">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-container">
+          <h1>Let's do this!</h1>
+          <form>
+            <div class="form-row">
+              <fieldset>
+                <label for="first-name"><small>FIRST NAME</small></label>
+                <input
+                  id="first-name"
+                  type="text"
+                  autofocus
+                  required
+                  minlength="3"
+                  maxlength="30"
+                  size="30"
+                />
+              </fieldset>
+              <fieldset>
+                <label for="last-name"><small>LAST NAME</small></label>
+                <input
+                  id="last-name"
+                  type="text"
+                  required
+                  minlength="3"
+                  maxlength="30"
+                  size="30"
+                />
+              </fieldset>
+            </div>
+
+            <div class="form-row">
+              <fieldset>
+                <label for="email"><small>EMAIL</small></label>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Please enter a valid email address"
+                  size="30"
+                />
+              </fieldset>
+              <fieldset>
+                <label for="phone-number"><small>PHONE NUMBER</small></label>
+                <input
+                  id="phone-number"
+                  type="tel"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  title="Please enter a valid phone number"
+                  size="30"
+                />
+              </fieldset>
+            </div>
+
+            <div class="form-row">
+              <fieldset>
+                <label for="password"><small>PASSWORD</small></label>
+                <input
+                  id="password"
+                  type="password"
+                  required
+                  onkeyup="validatePassword()"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  size="30"
+                />
+                <span class="password-error"
+                  ><small>* Passwords don't match</small></span
+                >
+              </fieldset>
+              <fieldset>
+                <label for="confirm-password"
+                  ><small>CONFIRM PASSWORD</small></label
+                >
+                <input
+                  id="confirm-password"
+                  type="password"
+                  required
+                  onkeyup="validatePassword()"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  size="30"
+                />
+              </fieldset>
+            </div>
+          </form>
+        </div>
+        <button type="submit">Create Account</button>
+
+        <p class="login">Already have an account? <a href="#">Log in</a></p>
+      </section>
+    </main>
+    <script>
+      const password = document.querySelector("#password");
+      const confirmPassword = document.querySelector("#confirm-password");
+      const errorMessage = document.querySelector(".password-error");
+
+      function validatePassword() {
+        if (password.value != confirmPassword.value) {
+          confirmPassword.setCustomValidity("Passwords don't match");
+          password.style.borderColor = "var(--invalid-border)";
+          confirmPassword.style.borderColor = "var(--invalid-border)";
+          errorMessage.style.visibility = "visible";
+        } else {
+          confirmPassword.setCustomValidity("");
+          password.style.borderColor = "var(--leaf-green)";
+          confirmPassword.style.borderColor = "var(--leaf-green)";
+          errorMessage.style.visibility = "hidden";
+        }
+      }
+    </script>
+  </body>
+</html>

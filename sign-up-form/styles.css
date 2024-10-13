@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "norsebold";
+  src: url("fonts/") format("woff2"),
+    url("fonts/norse-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --norse-bold: "norsebold";
+  --white: #fff;
+  --leaf-green: #596d48;
+  --border-color: #e5e7eb;
+  --invalid-border: crimson;
+  --focused-border: blue;
+  --background-color: #f9fafb;
+  --black-transparent: rgba(0, 0, 0, 0.5);
+  --shadow-black: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+aside {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 37%;
+}
+
+.logo {
+  margin-top: 20vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--black-transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 6rem;
+}
+
+.logo-text {
+  font-family: "NorseBold", "Open Sans", sans-serif;
+  font-size: 5rem;
+  color: var(--white);
+}
+
+footer {
+  color: var(--white);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0.8rem;
+}
+
+footer a {
+  color: var(--white);
+}
+
+section {
+  width: 63%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.text-container {
+  width: 75%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 3rem;
+  margin-top: 15vh;
+}
+
+p.subtext {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 800px;
+  padding: 1.5rem 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 10px -2px var(--shadow-black);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5rem;
+  margin-bottom: 2vh;
+}
+
+.form-row:last-of-type {
+  margin-bottom: 0;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--focused-border);
+  box-shadow: 2px 2px 5px var(--shadow-black);
+}
+
+input[type="password"]:invalid {
+  border: 1px solid var(--invalid-border);
+  margin-bottom: 0;
+}
+
+input[type="password"]:invalid ~ span.password-error {
+  visibility: visible;
+}
+
+span.password-error {
+  visibility: hidden;
+  color: var(--invalid-border);
+  margin-top: 0;
+}
+
+button {
+  margin: 0 0 2rem 3rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--leaf-green);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+p.login {
+  font-size: 1.1rem;
+  margin-left: 3rem;
+}
+
+.login a {
+  color: var(--leaf-green);
+  text-decoration: none;
+  font-weight: bold;
+}
