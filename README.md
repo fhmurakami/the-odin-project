@@ -48,6 +48,13 @@
 | 12. Find The Oldest              |                                                             | [Code][JSFoundationsCode12]     | [View][JSFoundationsPage12]     |
 | **Calculator**                   | [JS Calculator Project][JS-CalcProject]                     | [Code][JS-CalcProjectCode]      | [View][JS-CalcProjectPage]      |
 |                                  |                                                             |                                 |                                 |
+| **Intermediate HTML and CSS**    |                                                             |                                 |                                 |
+| **Forms**                        |                                                             |                                 |                                 |
+| 1. Sign-up Form                  | [Sign-up Form Project][Sign-upProject]                      | [Code][Sign-upProjectCode]      | [View][Sign-upProjectPage]      |
+|                                  |                                                             |                                 |                                 |
+| **Grid**                         |                                                             |                                 |                                 |
+| 1. Positioning Grid Elements     | [Positioning Grid Elements][GridExercise1]                  | [Code][CSSGridCode1]            | [View][CSSGridPage1]            |
+|                                  |                                                             |                                 |                                 |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
 [HTMLFoundationsCode]: ./odin-recipes/
@@ -146,3 +153,15 @@
 [JS-CalcProject]: https://www.theodinproject.com/lessons/foundations-calculator
 [JS-CalcProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/calculator
 [JS-CalcProjectPage]: https://fhmurakami.github.io/the-odin-project/calculator/index.html
+
+<!--  -->
+
+[Sign-upProject]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
+[Sign-upProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/sign-up-form
+[Sign-upProjectPage]: https://fhmurakami.github.io/the-odin-project/sign-up-form/index.html
+
+<!--  -->
+
+[GridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning-grid-elements
+[CSSGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/positioning-grid/01-basic-holy-grail
+[CSSGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/positioning-grid/01-basic-holy-grail/
