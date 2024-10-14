@@ -56,26 +56,26 @@
 <!--  -->
 
 [CSSFoundationsExercises]: https://www.theodinproject.com/lessons/foundations-intro-to-css
-[CSSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/01-css-methods
-[CSSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/01-css-methods/index.html
-[CSSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/02-class-id-selectors
-[CSSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/02-class-id-selectors/index.html
-[CSSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/03-grouping-selectors
-[CSSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/03-grouping-selectors/index.html
-[CSSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/04-chaining-selectors
-[CSSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/04-chaining-selectors/index.html
-[CSSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/05-descendant-combinator
-[CSSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/05-descendant-combinator/index.html
-[CSSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/06-cascade-fix
-[CSSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/06-cascade-fix/index.html
+[CSSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/01-css-methods
+[CSSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/01-css-methods/index.html
+[CSSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/02-class-id-selectors
+[CSSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/02-class-id-selectors/index.html
+[CSSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/03-grouping-selectors
+[CSSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/03-grouping-selectors/index.html
+[CSSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/04-chaining-selectors
+[CSSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/04-chaining-selectors/index.html
+[CSSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/05-descendant-combinator
+[CSSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/05-descendant-combinator/index.html
+[CSSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/06-cascade-fix
+[CSSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/06-cascade-fix/index.html
 
 <!-- -->
 
 [CSSMarginPaddingProject]: https://www.theodinproject.com/lessons/foundations-block-and-inline
-[CSSMarginPaddingCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/margin-and-padding/01-margin-and-padding-1
-[CSSMarginPaddingPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/margin-and-padding/01-margin-and-padding-1/
-[CSSMarginPaddingCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/margin-and-padding/02-margin-and-padding-2
-[CSSMarginPaddingPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/margin-and-padding/02-margin-and-padding-2/
+[CSSMarginPaddingCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/block-and-inline/01-margin-and-padding-1
+[CSSMarginPaddingPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/block-and-inline/01-margin-and-padding-1/
+[CSSMarginPaddingCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/block-and-inline/02-margin-and-padding-2
+[CSSMarginPaddingPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/block-and-inline/02-margin-and-padding-2/
 
 <!--  -->
 

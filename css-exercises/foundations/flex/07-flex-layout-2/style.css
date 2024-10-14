@@ -1,0 +1,77 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 32px;
+  font-weight: 900;
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  width: 300px;
+  padding: 16px;
+  background: royalblue;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 16px;
+}
+
+.sidebar a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.cards {
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  /* solution.css uses */
+  /* gap: 32px; */
+  /* instead of max-height and margin in .card */
+}
+
+.card {
+  max-width: 300px;
+  max-height: 350px;
+  margin: 16px auto;
+  padding: 16px;
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
