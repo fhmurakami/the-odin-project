@@ -55,6 +55,11 @@
 | **Grid**                         |                                                             |                                 |                                 |
 | 1. Positioning Grid Elements     | [Positioning Grid Elements][GridExercise1]                  | [Code][CSSGridCode1]            | [View][CSSGridPage1]            |
 |                                  |                                                             |                                 |                                 |
+| **Advanced Grid**                |                                                             |                                 |                                 |
+| 1. Responsive Holy Grail         | [ResponsiveHolyGrail][AdvancedGridExercise1]                | [Code][CSSAdvancedGridCode1]    | [View][CSSAdvancedGridPage1]    |
+|                                  |                                                             |                                 |                                 |
+|                                  |                                                             |                                 |                                 |
+|                                  |                                                             |                                 |                                 |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
 [HTMLFoundationsCode]: ./odin-recipes/
@@ -165,3 +170,9 @@
 [GridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning-grid-elements
 [CSSGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/positioning-grid/01-basic-holy-grail
 [CSSGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/positioning-grid/01-basic-holy-grail/
+
+<!--  -->
+
+[AdvancedGridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties
+[CSSAdvancedGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail
+[CSSAdvancedGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail/01-basic-holy-grail/
