@@ -56,8 +56,8 @@
 | 1. Positioning Grid Elements     | [Positioning Grid Elements][GridExercise1]                  | [Code][CSSGridCode1]            | [View][CSSGridPage1]            |
 |                                  |                                                             |                                 |                                 |
 | **Advanced Grid**                |                                                             |                                 |                                 |
-| 1. Responsive Holy Grail         | [ResponsiveHolyGrail][AdvancedGridExercise1]                | [Code][CSSAdvancedGridCode1]    | [View][CSSAdvancedGridPage1]    |
-|                                  |                                                             |                                 |                                 |
+| 1. Responsive Holy Grail         | [Responsive Holy Grail][AdvancedGridExercise1]              | [Code][CSSAdvancedGridCode1]    | [View][CSSAdvancedGridPage1]    |
+| 2. Holy Grail Mockup             | [Holy Grail Mockup][AdvancedGridExercise2]                  | [Code][CSSAdvancedGridCode2]    | [View][CSSAdvancedGridPage2]    |
 |                                  |                                                             |                                 |                                 |
 |                                  |                                                             |                                 |                                 |
 
@@ -176,3 +176,8 @@
 [AdvancedGridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties
 [CSSAdvancedGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail
 [CSSAdvancedGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail/
+[AdvancedGridExercise2]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties
+[CSSAdvancedGridCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/advanced-grid/02-holy-grail-mockup
+[CSSAdvancedGridPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/02-holy-grail-mockup/
+
+<!--  -->
