@@ -175,4 +175,4 @@
 
 [AdvancedGridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties
 [CSSAdvancedGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail
-[CSSAdvancedGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail/01-basic-holy-grail/
+[CSSAdvancedGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail/
