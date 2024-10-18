@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700|roboto:300,400,500,700);
+@import url(https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700,800,900|roboto:300,400,500,700);
 
 :root {
   --light-gray: #e2e8f0;
@@ -21,16 +21,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  grid-template-areas:
-    "sidebar navbar"
-    "sidebar main";
 
   height: 100vh;
 }
 
 aside {
-  grid-area: sidebar;
   grid-column: 1 / 2;
+  grid-row: 1 / 3;
 
   background-color: var(--sky-blue);
 
@@ -81,4 +78,92 @@ section.sidebar {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+header {
+  background-color: var(--white);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.header-top {
+  grid-column: 1/3;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 6rem;
+}
+
+.header-top svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.search {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  min-width: 20rem;
+  max-width: 40rem;
+}
+
+.icons {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+input {
+  width: 100%;
+  height: 1.5rem;
+  background: var(--light-gray);
+  color: var(--sky-blue);
+  border-radius: 1.5rem;
+}
+
+.profile {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: end;
+
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  font-weight: 800;
+}
+
+.round-image {
+  border-radius: 1.75rem;
+}
+
+.small-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url("./images/avatar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-banner {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  border: 1px solid green;
 }
