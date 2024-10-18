@@ -4,6 +4,8 @@
   --light-gray: #e2e8f0;
   --sky-blue: #0ea5e9;
   --white: #f8fafc;
+
+  --morgan: url("./images/avatar.jpg");
 }
 
 * {
@@ -12,7 +14,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", "Roboto", Arial, Helvetica, sans-serif;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -20,7 +22,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 0.5fr 4fr;
 
   height: 100vh;
 }
@@ -85,15 +87,17 @@ header {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 0.5rem 4rem 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-top {
-  grid-column: 1/3;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1rem 2rem;
+
   display: grid;
   grid-template-columns: 4fr 2fr;
   gap: 6rem;
@@ -105,8 +109,6 @@ header {
 }
 
 .search {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -122,48 +124,81 @@ header {
 
 input {
   width: 100%;
-  height: 1.5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: none;
   background: var(--light-gray);
   color: var(--sky-blue);
-  border-radius: 1.5rem;
 }
 
 .profile {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  align-self: center;
-  justify-self: end;
-
-  /* display: flex; */
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 0.5fr 1fr 2fr;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
 
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
-.round-image {
-  border-radius: 1.75rem;
-}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
 
-.small-avatar {
-  width: 3.5rem;
-  height: 3.5rem;
-  background: url("./images/avatar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.header-banner {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
+.small.avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1.75rem;
 }
 
-main {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+.morgan {
+  background-image: var(--morgan);
+}
 
-  border: 1px solid green;
+.header-banner {
+  display: flex;
+}
+
+.greeting {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.greeting-text {
+  font-weight: 700;
+}
+
+.greeting .username {
+  font-size: 1.7rem;
+}
+
+.buttons {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.buttons button {
+  font-weight: 600;
+  font-size: 1rem;
+
+  background-color: var(--sky-blue);
+  color: var(--white);
+  padding: 0.5rem 1.5rem;
+  border-style: none;
+  border-radius: 20% / 50%;
+}
+
+button.upload {
+  border-radius: 15% / 50%;
 }
