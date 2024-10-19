@@ -1,27 +1,34 @@
 @import url(https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700,800,900|roboto:300,400,500,700);
 
 :root {
+  --dark-gray: #6b7280;
   --light-gray: #e2e8f0;
   --sky-blue: #0ea5e9;
   --white: #f8fafc;
+  --gold: #fbbf24;
 
-  --morgan: url("./images/avatar.jpg");
+  --peter: url("./images/avatar.png");
+  --peter-bg: var(--gold);
+  --miles: url("./images/avatar-2.png");
+  --miles-bg: #818cf8;
+  --gwen: url("./images/avatar-3.png");
+  --gwen-bg: #f87171;
+  --porker: url("./images/avatar-4.png");
+  --porker-bg: #34d399;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", "Roboto", Arial, Helvetica, sans-serif;
-
-  /* border: 1px solid red; */
+  font-family: "Roboto", "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 body {
   background: var(--light-gray);
 
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1.05fr 4fr;
   grid-template-rows: 0.5fr 4fr;
 
   height: 100vh;
@@ -31,31 +38,30 @@ aside {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 
+  padding: 1.25rem;
+
   background-color: var(--sky-blue);
 
   color: var(--white);
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 600;
 
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 5rem;
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: 2.05rem;
 
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-
-  padding: 1rem;
-  padding-right: 5rem;
+  gap: 1rem;
 }
 
 .logo svg {
-  width: 3rem;
-  height: 3rem;
+  width: 3.7rem;
+  height: 3.7rem;
 }
 
 aside ul {
@@ -66,14 +72,14 @@ aside li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 1.8rem;
 
-  padding: 0 1rem;
-  margin-bottom: 1.4rem;
+  padding: 0 0.8rem;
+  margin-bottom: 2rem;
 }
 
 aside svg {
-  height: 1.6rem;
+  height: 1.8rem;
 }
 
 section.sidebar {
@@ -88,58 +94,59 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 2rem;
 
-  padding: 0.5rem 4rem 1rem;
+  padding: 0.5rem 4rem 1.3rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-top {
   width: 100%;
   align-items: center;
-  justify-content: space-evenly;
 
   display: grid;
   grid-template-columns: 4fr 2fr;
-  gap: 6rem;
 }
 
 .header-top svg {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .search {
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  min-width: 20rem;
-  max-width: 40rem;
 }
 
 .icons {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 input {
   width: 100%;
-  height: 2rem;
-  border-radius: 2rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
   border: none;
   background: var(--light-gray);
   color: var(--sky-blue);
 }
 
 .profile {
+  margin-left: 10rem;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 2fr;
+  grid-template-columns: 0.25fr 0.5fr 3fr;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
+}
+
+.profile p {
+  text-wrap: nowrap;
 }
 
 .avatar {
@@ -149,16 +156,43 @@ input {
 
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .small.avatar {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.65rem;
+  height: 3.65rem;
   border-radius: 1.75rem;
 }
 
-.morgan {
-  background-image: var(--morgan);
+.peter {
+  background-image: var(--peter);
+  background-color: var(--peter-bg);
+  background-size: 4rem 4rem;
+}
+
+.peter.small {
+  background-size: 2.5rem 2.5rem;
+}
+
+.miles.small {
+  background-size: 2.5rem 2.5rem;
+  background-image: var(--miles);
+  background-color: var(--miles-bg);
+}
+
+.gwen.small {
+  background-size: 2.5rem 2.5rem;
+  background-image: var(--gwen);
+  background-color: var(--gwen-bg);
+  background-position: 75% 60%;
+}
+
+.porker.small {
+  background-size: 4.5rem 4.5rem;
+  background-image: var(--porker);
+  background-color: var(--porker-bg);
+  background-position: center bottom 150%;
 }
 
 .header-banner {
@@ -190,15 +224,147 @@ input {
 
 .buttons button {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   background-color: var(--sky-blue);
   color: var(--white);
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 2rem;
   border-style: none;
   border-radius: 20% / 50%;
 }
 
 button.upload {
   border-radius: 15% / 50%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1.06fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.6rem;
+  padding: 3rem 2.4rem 3rem 1.5rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+main h3 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+main h4 {
+  margin-bottom: 0.25rem;
+}
+
+main p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+main svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  height: 100%;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.projects .card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  border-left: 10px solid var(--gold);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 2rem 1.7rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.72rem;
+}
+
+.card .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 0.7rem;
+}
+
+.announcements {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.announcements-items {
+  background-color: var(--white);
+  padding: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-item .title {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.announcement-item .description {
+  font-size: 0.9rem;
+
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.trending {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-top: -0.5rem;
+}
+
+.trending-cards {
+  background-color: var(--white);
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.trending-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.trending-card .user {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.trending-card .title {
+  font-size: 1.05rem;
 }
