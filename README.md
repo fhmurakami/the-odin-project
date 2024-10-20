@@ -63,102 +63,107 @@
 |                                  |                                                             |                                 |                                 |
 
 [HTMLFoundationsProject]: https://www.theodinproject.com/lessons/foundations-recipes
-[HTMLFoundationsCode]: ./odin-recipes/
-[HTMLFoundationsPage]: https://fhmurakami.github.io/the-odin-project/odin-recipes
+[HTMLFoundationsCode]: ./foundations/html/odin-recipes/
+[HTMLFoundationsPage]: https://fhmurakami.github.io/the-odin-project/foundations/html/odin-recipes
 
 <!--  -->
 
 [CSSFoundationsExercises]: https://www.theodinproject.com/lessons/foundations-intro-to-css
-[CSSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/01-css-methods
-[CSSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/01-css-methods/index.html
-[CSSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/02-class-id-selectors
-[CSSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/02-class-id-selectors/index.html
-[CSSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/03-grouping-selectors
-[CSSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/03-grouping-selectors/index.html
-[CSSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/04-chaining-selectors
-[CSSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/04-chaining-selectors/index.html
-[CSSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/05-descendant-combinator
-[CSSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/05-descendant-combinator/index.html
-[CSSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/foundations/intro-to-css/06-cascade-fix
-[CSSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/css-exercises/foundations/intro-to-css/06-cascade-fix/index.html
+[CSSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/intro-to-css/01-css-methods
+[CSSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/intro-to-css/01-css-methods/index.html
+<!--  -->
+[CSSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/intro-to-css/02-class-id-selectors
+[CSSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/intro-to-css/02-class-id-selectors/index.html
+<!--  -->
+[CSSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/intro-to-css/03-grouping-selectors
+[CSSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/intro-to-css/03-grouping-selectors/index.html
+<!--  -->
+[CSSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/intro-to-css/04-chaining-selectors
+[CSSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/intro-to-css/04-chaining-selectors/index.html
+<!--  -->
+[CSSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/intro-to-css/05-descendant-combinator
+[CSSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/intro-to-css/05-descendant-combinator/index.html
+<!--  -->
+[CSSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/cascade/01-cascade-fix
+[CSSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/cascade/01-cascade-fix/index.html
 
 <!-- -->
 
 [CSSMarginPaddingProject]: https://www.theodinproject.com/lessons/foundations-block-and-inline
-[CSSMarginPaddingCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/block-and-inline/01-margin-and-padding-1
-[CSSMarginPaddingPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/block-and-inline/01-margin-and-padding-1/
-[CSSMarginPaddingCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/block-and-inline/02-margin-and-padding-2
-[CSSMarginPaddingPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/block-and-inline/02-margin-and-padding-2/
+[CSSMarginPaddingCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/block-and-inline/01-margin-and-padding-1
+[CSSMarginPaddingPage1]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/block-and-inline/01-margin-and-padding-1/
+[CSSMarginPaddingCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/block-and-inline/02-margin-and-padding-2
+[CSSMarginPaddingPage2]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/block-and-inline/02-margin-and-padding-2/
 
 <!--  -->
 
 [CSSFlexProject]: https://www.theodinproject.com/lessons/foundations-alignment
-[CSSFlexCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/01-flex-center
-[CSSFlexPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/01-flex-center/
-[CSSFlexCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/02-flex-header
-[CSSFlexPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/02-flex-header/
-[CSSFlexCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/03-flex-header-2
-[CSSFlexPage3]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/03-flex-header-2/
-[CSSFlexCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/04-flex-information
-[CSSFlexPage4]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/04-flex-information/
-[CSSFlexCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/05-flex-modal
-[CSSFlexPage5]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/05-flex-modal/
-[CSSFlexCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/06-flex-layout
-[CSSFlexPage6]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/06-flex-layout/
-[CSSFlexCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/flex/07-flex-layout-2
-[CSSFlexPage7]: https://fhmurakami.github.io/the-odin-project/css-exercises/flex/07-flex-layout-2/
+[CSSFlexCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/01-flex-center
+[CSSFlexPage1]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/01-flex-center/
+[CSSFlexCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/02-flex-header
+[CSSFlexPage2]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/02-flex-header/
+[CSSFlexCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/03-flex-header-2
+[CSSFlexPage3]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/03-flex-header-2/
+[CSSFlexCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/04-flex-information
+[CSSFlexPage4]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/04-flex-information/
+[CSSFlexCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/05-flex-modal
+[CSSFlexPage5]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/05-flex-modal/
+[CSSFlexCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/06-flex-layout
+[CSSFlexPage6]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/06-flex-layout/
+[CSSFlexCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/exercises/flex/07-flex-layout-2
+[CSSFlexPage7]: https://fhmurakami.github.io/the-odin-project/foundations/css/exercises/flex/07-flex-layout-2/
 
 <!--  -->
 
 [CSSFoundationsProject]: https://www.theodinproject.com/lessons/foundations-landing-page
-[CSSFoundationsCode]: https://github.com/fhmurakami/the-odin-project/tree/main/landing-page
-[CSSFoundationsPage]: https://fhmurakami.github.io/the-odin-project/landing-page/
+[CSSFoundationsCode]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/css/projects/landing-page
+[CSSFoundationsPage]: https://fhmurakami.github.io/the-odin-project/foundations/css/projects/landing-page/
 
 <!--  -->
 
 [JSFoundationsExercises]: https://www.theodinproject.com/lessons/foundations-arrays-and-loops
-[JSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/01_helloWorld
-[JSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/01_helloWorld/
-[JSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/02_repeatString
-[JSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/02_repeatString/
-[JSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/03_reverseString
-[JSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/03_reverseString/
-[JSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/04_removeFromArray
-[JSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/04_removeFromArray/
-[JSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/05_sumAll
-[JSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/05_sumAll/
-[JSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/06_leapYears
-[JSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/06_leapYears/
-[JSFoundationsCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/07_tempConversion
-[JSFoundationsPage7]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/07_tempConversion/
-[JSFoundationsCode8]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/08_calculator
-[JSFoundationsPage8]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/08_calculator/
-[JSFoundationsCode9]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/09_palindromes
-[JSFoundationsPage9]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/09_palindromes/
-[JSFoundationsCode10]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/10_fibonacci
-[JSFoundationsPage10]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/10_fibonacci/
-[JSFoundationsCode11]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/11_getTheTitles
-[JSFoundationsPage11]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/11_getTheTitles/
-[JSFoundationsCode12]: https://github.com/fhmurakami/the-odin-project/tree/main/javascript-exercises/12_findTheOldest
-[JSFoundationsPage12]: https://fhmurakami.github.io/the-odin-project/javascript-exercises/12_findTheOldest/
+[JSFoundationsCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/01_helloWorld
+[JSFoundationsPage1]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/01_helloWorld/
+[JSFoundationsCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/02_repeatString
+[JSFoundationsPage2]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/02_repeatString/
+[JSFoundationsCode3]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/03_reverseString
+[JSFoundationsPage3]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/03_reverseString/
+[JSFoundationsCode4]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/04_removeFromArray
+[JSFoundationsPage4]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/04_removeFromArray/
+[JSFoundationsCode5]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/05_sumAll
+[JSFoundationsPage5]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/05_sumAll/
+[JSFoundationsCode6]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/06_leapYears
+[JSFoundationsPage6]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/06_leapYears/
+[JSFoundationsCode7]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/07_tempConversion
+[JSFoundationsPage7]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/07_tempConversion/
+[JSFoundationsCode8]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/08_calculator
+[JSFoundationsPage8]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/08_calculator/
+[JSFoundationsCode9]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/09_palindromes
+[JSFoundationsPage9]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/09_palindromes/
+[JSFoundationsCode10]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/10_fibonacci
+[JSFoundationsPage10]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/10_fibonacci/
+[JSFoundationsCode11]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/11_getTheTitles
+[JSFoundationsPage11]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/11_getTheTitles/
+[JSFoundationsCode12]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/exercises/12_findTheOldest
+[JSFoundationsPage12]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/exercises/12_findTheOldest/
 
 <!--  -->
 
 [JS-RPSProject]: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
-[JS-RPSProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/rock-paper-scissors
-[JS-RPSProjectPage]: https://fhmurakami.github.io/the-odin-project/rock-paper-scissors/index.html
+[JS-RPSProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/projects/rock-paper-scissors
+[JS-RPSProjectPage]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/projects/rock-paper-scissors/index.html
 
 <!--  -->
 
 [JSEtchSketchProject]: https://www.theodinproject.com/lessons/foundations-etch-a-sketch
-[JSEtchSketchProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/etch-a-sketch
-[JSEtchSketchProjectPage]: https://fhmurakami.github.io/the-odin-project/etch-a-sketch/index.html
+[JSEtchSketchProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/projects/etch-a-sketch
+[JSEtchSketchProjectPage]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/projects/etch-a-sketch/index.html
 
 <!--  -->
 
 [JS-CalcProject]: https://www.theodinproject.com/lessons/foundations-calculator
-[JS-CalcProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/calculator
-[JS-CalcProjectPage]: https://fhmurakami.github.io/the-odin-project/calculator/index.html
+[JS-CalcProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/foundations/javascript/projects/calculator
+[JS-CalcProjectPage]: https://fhmurakami.github.io/the-odin-project/foundations/javascript/projects/calculator/index.html
 
 <!--  -->
 
