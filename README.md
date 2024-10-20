@@ -168,28 +168,28 @@
 <!--  -->
 
 [Sign-upProject]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
-[Sign-upProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/sign-up-form
-[Sign-upProjectPage]: https://fhmurakami.github.io/the-odin-project/sign-up-form/index.html
+[Sign-upProjectCode]: https://github.com/fhmurakami/the-odin-project/tree/main/fullstack-javascript/intermediate-html-css/projects/sign-up-form
+[Sign-upProjectPage]: https://fhmurakami.github.io/the-odin-project/fullstack-javascript/intermediate-html-css/projects/sign-up-form/index.html
 
 <!--  -->
 
 [GridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning-grid-elements
-[CSSGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/positioning-grid/01-basic-holy-grail
-[CSSGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/positioning-grid/01-basic-holy-grail/
+[CSSGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/fullstack-javascript/intermediate-html-css/positioning-grid/01-basic-holy-grail
+[CSSGridPage1]: https://fhmurakami.github.io/the-odin-project/fullstack-javascript/intermediate-html-css/positioning-grid/01-basic-holy-grail/
 
 <!--  -->
 
 [AdvancedGridExercise1]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties
-[CSSAdvancedGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail
-[CSSAdvancedGridPage1]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/01-responsive-holy-grail/
+[CSSAdvancedGridCode1]: https://github.com/fhmurakami/the-odin-project/tree/main/fullstack-javascript/intermediate-html-css/advanced-grid/01-responsive-holy-grail
+[CSSAdvancedGridPage1]: https://fhmurakami.github.io/the-odin-project/fullstack-javascript/intermediate-html-css/advanced-grid/01-responsive-holy-grail/
 [AdvancedGridExercise2]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties
-[CSSAdvancedGridCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/advanced-grid/02-holy-grail-mockup
-[CSSAdvancedGridPage2]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/advanced-grid/02-holy-grail-mockup/
+[CSSAdvancedGridCode2]: https://github.com/fhmurakami/the-odin-project/tree/main/fullstack-javascript/intermediate-html-css/advanced-grid/02-holy-grail-mockup
+[CSSAdvancedGridPage2]: https://fhmurakami.github.io/the-odin-project/fullstack-javascript/intermediate-html-css/advanced-grid/02-holy-grail-mockup/
 
 <!--  -->
 
 [AdminDashProject]: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
-[AdminDashCode]: https://github.com/fhmurakami/the-odin-project/tree/main/css-exercises/intermediate-html-css/admin-dashboard
-[AdminDashPage]: https://fhmurakami.github.io/the-odin-project/css-exercises/intermediate-html-css/admin-dashboard/
+[AdminDashCode]: https://github.com/fhmurakami/the-odin-project/tree/main/fullstack-javascript/intermediate-html-css/projects/admin-dashboard
+[AdminDashPage]: https://fhmurakami.github.io/the-odin-project/fullstack-javascript/intermediate-html-css/projects/admin-dashboard/
 
 <!--  -->
