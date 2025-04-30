@@ -103,7 +103,15 @@ function renderLibrary(myLibrary) {
         <td>${book.author}</td>
         <td>${book.pages} pages</td>
         <td>
-          ${book.read ? "Read" : "Not read yet"}
+          ${
+            book.read
+              ? "Read"
+              : "Not read yet" +
+                '<button data-id="' +
+                book.id +
+                '">Mark as read</button>'
+          }
+
         </td>
         <td><button data-id="${book.id}">Remove</button></td>
       </tr>
@@ -128,6 +136,18 @@ library.addEventListener("click", (event) => {
   if (event.target.textContent === "Remove") {
     const bookId = event.target.getAttribute("data-id");
     removeBookFromLibrary(bookId);
+  }
+});
+
+library.addEventListener("click", (event) => {
+  if (
+    event.target.tagName === "BUTTON" &&
+    event.target.textContent === "Mark as read"
+  ) {
+    const bookId = event.target.getAttribute("data-id");
+    const book = myLibrary.find((book) => book.id === bookId);
+    book.read = true;
+    renderLibrary(myLibrary);
   }
 });
 
