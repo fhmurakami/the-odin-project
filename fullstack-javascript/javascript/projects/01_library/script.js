@@ -102,7 +102,10 @@ function renderLibrary(myLibrary) {
         <td>${book.title}</td>
         <td>${book.author}</td>
         <td>${book.pages} pages</td>
-        <td>${book.read ? "Read" : "Not read yet"}</td>
+        <td>
+          ${book.read ? "Read" : "Not read yet"}
+        </td>
+        <td><button data-id="${book.id}">Remove</button></td>
       </tr>
     `;
     })
@@ -115,6 +118,18 @@ function renderLibrary(myLibrary) {
 
   library.innerHTML = table;
 }
+
+function removeBookFromLibrary(bookId) {
+  myLibrary = myLibrary.filter((book) => book.id !== bookId);
+  renderLibrary(myLibrary);
+}
+
+library.addEventListener("click", (event) => {
+  if (event.target.textContent === "Remove") {
+    const bookId = event.target.getAttribute("data-id");
+    removeBookFromLibrary(bookId);
+  }
+});
 
 function addToLibrary(library, book) {
   let newBook = new Book(book.title, book.author, book.pages, book.read);
